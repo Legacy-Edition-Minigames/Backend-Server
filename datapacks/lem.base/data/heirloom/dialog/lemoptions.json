@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "",
+  "external_title": "LEM Options",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "1234\n\n\n",
+        "color": "#fafafa",
+        "font": "title"
+      },
+      "width": 235
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "lem.mapdecider.menu.credit",
+        "extra": [
+          {
+            "text": "\nThe LEM Team",
+            "italic": true,
+            "underlined": true,
+            "click_event": {
+              "action": "open_url",
+              "url": "https://www.legacyminigames.net/credits"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "lem.mapdecider.menu.supportplease",
+        "extra": [
+          {
+            "text": "\nPatreon",
+            "italic": true,
+            "underlined": true,
+            "click_event": {
+              "action": "open_url",
+              "url": "https://www.legacyminigames.net/patreon"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "exit_action": {
+    "label": {
+      "translate": "mco.selectServer.close"
+    },
+    "action": {
+      "type": "custom",
+      "id": "heirloom:just_close"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "translate": "lem.mapdecider.menu.mapvoting"
+      },
+      "action": {
+        "type": "custom",
+        "id": "heirloom:just_open",
+        "payload": "map_vote_list"
+      }
+    },
+    {
+      "label": {
+        "translate": "lem.generic.options"
+      },
+      "action": {
+        "type": "custom",
+        "id": "heirloom:just_open",
+        "payload": "options_list"
+      }
+    }
+  ]
+}
